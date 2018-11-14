@@ -1,0 +1,73 @@
+{
+  "_from": "soundcloud-lookup",
+  "_id": "soundcloud-lookup@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-vdzP3uXKWjkWlhkLBDaYWX02kcY=",
+  "_location": "/soundcloud-lookup",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "soundcloud-lookup",
+    "name": "soundcloud-lookup",
+    "escapedName": "soundcloud-lookup",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/soundcloud-lookup/-/soundcloud-lookup-0.0.2.tgz",
+  "_shasum": "bddccfdee5ca5a391696190b043698597d3691c6",
+  "_spec": "soundcloud-lookup",
+  "_where": "E:\\DashBot\\node",
+  "author": {
+    "name": "Fractal contact@wearefractal.com",
+    "url": "http://wearefractal.com"
+  },
+  "browser": "./browser.js",
+  "bugs": {
+    "url": "https://github.com/wearefractal/soundcloud-lookup/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "browser-jsonp": "^1.0.7",
+    "superagent": "^3.8.0"
+  },
+  "deprecated": false,
+  "description": "Simply look up info about a URL on soundcloud",
+  "devDependencies": {
+    "coveralls": "^2.6.1",
+    "istanbul": "^0.3.2",
+    "jshint": "^2.4.1",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^2.0.1",
+    "mocha-lcov-reporter": "^0.0.1",
+    "mochify": "^1.7.0",
+    "rimraf": "^2.2.5",
+    "should": "^4.0.0"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "homepage": "http://github.com/wearefractal/soundcloud-lookup",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/wearefractal/soundcloud-lookup/raw/master/LICENSE"
+    }
+  ],
+  "main": "./index.js",
+  "name": "soundcloud-lookup",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wearefractal/soundcloud-lookup.git"
+  },
+  "scripts": {
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "lint": "jshint index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules",
+    "test": "npm run-script lint && mocha --reporter spec && mochify --reporter spec"
+  },
+  "version": "0.0.2"
+}

@@ -1,0 +1,77 @@
+{
+  "_from": "node-bandcamp",
+  "_id": "node-bandcamp@0.0.6",
+  "_inBundle": false,
+  "_integrity": "sha1-N2y+Vt2A0IzunMkerkwCgB/pTEs=",
+  "_location": "/node-bandcamp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-bandcamp",
+    "name": "node-bandcamp",
+    "escapedName": "node-bandcamp",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-bandcamp/-/node-bandcamp-0.0.6.tgz",
+  "_shasum": "376cbe56dd80d08cee9cc91eae4c02801fe94c4b",
+  "_spec": "node-bandcamp",
+  "_where": "F:\\DashBot\\node",
+  "author": {
+    "name": "Jake Marsh",
+    "email": "jakemmarsh@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/jakemmarsh/node-bandcamp/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "request": "^2.53.0",
+    "when": "^3.7.2"
+  },
+  "deprecated": false,
+  "description": "An (unofficial) node.js API for Bandcamp.",
+  "devDependencies": {
+    "isstream": "^0.1.2",
+    "jest-cli": "^0.4.0"
+  },
+  "engines": {
+    "node": ">=0.12.x"
+  },
+  "homepage": "https://github.com/jakemmarsh/node-bandcamp#readme",
+  "jest": {
+    "rootDir": ".",
+    "testPathDirs": [
+      "<rootDir>"
+    ],
+    "testDirectoryName": "__tests__",
+    "testFileExtensions": [
+      "js"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/when"
+    ]
+  },
+  "keywords": [
+    "node",
+    "music",
+    "bandcamp"
+  ],
+  "license": "MIT",
+  "name": "node-bandcamp",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakemmarsh/node-bandcamp.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "version": "0.0.6"
+}

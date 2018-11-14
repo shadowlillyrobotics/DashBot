@@ -1,0 +1,56 @@
+{
+  "_from": "trace-redirect",
+  "_id": "trace-redirect@1.0.6",
+  "_inBundle": false,
+  "_integrity": "sha512-UUfa1DjjU5flcjMdaFIiIEGDTyu2y/IiMjOX4uGXa7meKBS4vD4f2Uy/tken9Qkd4Jsm4sRsfZcIIPqrRVF3Mg==",
+  "_location": "/trace-redirect",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "trace-redirect",
+    "name": "trace-redirect",
+    "escapedName": "trace-redirect",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/trace-redirect/-/trace-redirect-1.0.6.tgz",
+  "_shasum": "ac629b5bf8247d30dde5a35fe9811b811075b504",
+  "_spec": "trace-redirect",
+  "_where": "E:\\DashBot\\node",
+  "author": {
+    "name": "prezzemolo",
+    "email": "owner@prezzemolo.org"
+  },
+  "bugs": {
+    "url": "https://github.com/prezzemolo/trace-redirect/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "trace where redirects end up.",
+  "devDependencies": {
+    "@types/node": "8.0.56",
+    "tslint": "5.8.0",
+    "typescript": "2.6.2"
+  },
+  "homepage": "https://github.com/prezzemolo/trace-redirect#readme",
+  "license": "MIT",
+  "main": "./release/index.js",
+  "name": "trace-redirect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prezzemolo/trace-redirect.git"
+  },
+  "scripts": {
+    "bash": "bash",
+    "build": "tsc",
+    "lint": "find src -type f | xargs tslint -c tslint.json",
+    "test": "npm run lint"
+  },
+  "types": "./release/types/index.d.ts",
+  "version": "1.0.6"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "DashBot",
+  "version": "1.0.0",
+  "description": "A bot... duh",
+  "main": "bot.js",
+  "author": "Lilly",
+  "dependencies": {},
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "opusscript": "file:opusscript"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "_from": "soundcloud-search-node",
+  "_id": "soundcloud-search-node@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-zDfFHOppgqXtLYcIJ3byCmz9sws=",
+  "_location": "/soundcloud-search-node",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "soundcloud-search-node",
+    "name": "soundcloud-search-node",
+    "escapedName": "soundcloud-search-node",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/soundcloud-search-node/-/soundcloud-search-node-1.0.2.tgz",
+  "_shasum": "cc37c51cea6982a5ed2d87082776f20a6cfdb30b",
+  "_spec": "soundcloud-search-node",
+  "_where": "E:\\node",
+  "author": {
+    "name": "Zein Fakhreddine",
+    "email": "Zein.Fakhreddine@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Zein-Fakhreddine/Soundcloud-Search-Node/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "request": "^2.67.0"
+  },
+  "deprecated": false,
+  "description": "Gets tracks that match a search name given by the username from the Soundcloud database",
+  "devDependencies": {},
+  "homepage": "https://github.com/Zein-Fakhreddine/Soundcloud-Search-Node#readme",
+  "keywords": [
+    "soundcloud",
+    "soundcloud search",
+    "search",
+    "Music Search"
+  ],
+  "license": "ISC",
+  "main": "Search.js",
+  "name": "soundcloud-search-node",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zein-Fakhreddine/Soundcloud-Search-Node.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}
