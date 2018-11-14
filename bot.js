@@ -157,9 +157,9 @@ bot.on('message', function (message) {
 				blur(message);
 				break;
 					
-			case "patreon":
-				patreon(message);
-				break;
+			//case "patreon":
+				//patreon(message);
+				//break;
 			
 			case "bandcampsearch":
 				bandcampsearch(message);
@@ -229,17 +229,17 @@ bot.on('message', function (message) {
 				download(message);
 				break;
 
-			case "maid":
-				maid(message);
-				break;
+			//case "maid":
+				//maid(message);
+				//break;
 				
-			case "derpi-top":
-				derpibooru(message, 0);
-				break;
+			//case "derpi-top":
+				//derpibooru(message, 0);
+				//break;
 
-			case "boop":
-				boop(message);
-				break;
+			//case "boop":
+				//boop(message);
+				//break;
 
 			case "bap":
 				bap(message);
