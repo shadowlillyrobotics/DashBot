@@ -1062,7 +1062,7 @@ function ping(message) {
 
 function insult(message) {
 	if(message.content.indexOf(" ") == -1) {
-		message.channel.send("I'm just gonna assume you want me to insult Zakru... after all... why wouldn't you x333");
+		message.channel.send("I'm just gonna assume you want me to insult Spencer... after all... why wouldn't you x333");
 	}
 	else if(message.content.substring(message.content.indexOf(" ") + 1).indexOf(" ") != -1) {
 		message.channel.send("I can only insult so many people without starting a war, dumdum :p");
