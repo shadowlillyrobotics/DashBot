@@ -29,7 +29,7 @@
 		global.bandcamp = require("./dependencies/node-bandcamp");
 		global.XMLHttpRequest = require("./dependencies/xmlhttprequest").XMLHttpRequest;
 		global.traceurl = require("./dependencies/trace-redirect").default;
-		global.selfID = "502868843828609035";
+		global.selfID = "512304806799605762";
 		global.ownerID = "385905131063083008";
 		global.dadJokeOdds = 0.5;
 		global.musicQueue = [];
