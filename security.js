@@ -2,7 +2,7 @@ module.exports = {
 	eventHandlers: function () {
 		bot.on("roleCreate", async function(role) {
 			var audit = await role.guild.fetchAuditLogs({type: "ROLE_CREATE"}).then(audit => audit.entries.first());
-			if(audit.executor.id == selfID) {
+			if(audit.executor.id == selfID && (Date.now() - Date.UTC(audit.createdAt.toUTCString()) < 21600000)) {
 				if(lastRiskyAction == "ROLE_CREATE") {
 					lastRiskyAction = null;
 				}
@@ -13,7 +13,7 @@ module.exports = {
 		});
 		bot.on("roleUpdate", async function(role) {
 			var audit = await role.guild.fetchAuditLogs({type: "ROLE_UPDATE"}).then(audit => audit.entries.first());
-			if(audit.executor.id == selfID) {
+			if(audit.executor.id == selfID && (Date.now() - Date.UTC(audit.createdAt.toUTCString()) < 21600000)) {
 				if(lastRiskyAction == "ROLE_UPDATE") {
 					lastRiskyAction = null;
 				}
@@ -24,7 +24,7 @@ module.exports = {
 		});
 		bot.on("channelDelete", async function(channel) {
 			var audit = await channel.guild.fetchAuditLogs({type: "CHANNEL_DELETE"}).then(audit => audit.entries.first());
-			if(audit.executor.id == selfID) {
+			if(audit.executor.id == selfID && (Date.now() - Date.UTC(audit.createdAt.toUTCString()) < 21600000)) {
 				if(lastRiskyAction == "CHANNEL_DELETE") {
 					lastRiskyAction = null;
 				}
@@ -36,7 +36,7 @@ module.exports = {
 		bot.on("guildMemberUpdate", async function (oldMember, newMember) {
 			if(!oldMember.roles.equals(newMember.roles)) {
 				var audit = await oldMember.guild.fetchAuditLogs({type: "MEMBER_ROLE_UPDATE"}).then(audit => audit.entries.first());
-				if(audit.executor.id == selfID) {
+				if(audit.executor.id == selfID && (Date.now() - Date.UTC(audit.createdAt.toUTCString()) < 21600000)) {
 					if(lastRiskyAction == "MEMBER_ROLE_UPDATE") {
 						lastRiskyAction = null;
 					}
