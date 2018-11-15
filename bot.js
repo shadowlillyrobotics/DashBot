@@ -302,7 +302,7 @@ bot.on('message', function (message) {
 
 function todo(message) {
 	if(message.author.id == ownerID) {
-		message.channel.send("Here is your to-do list:\n1. Finish UW Personal Statement\n2. Send ACT score, KHS transcript, and LCC transcript to UW\n3. Turn in chemistry lab\n4. Finish American Government Exam\n5. Finish chemistry exam\n6. Psychology discussion\n7. Register for Winter Quarter\n8. Pay fees for Winter Quarter\n9. Pay entrance fee for Phi Theta Kappa\n10. Redeem Amazon Gift Card Codes\n11. Volunteer Hours");
+		message.channel.send("Here is your to-do list:\n1. Pay fees for Winter Quarter (Dec 31)\n2. 20 Volunteer Hours (Feb 6)\n3. Volunteer Thank You Note (Feb 6)\n4. High School and Beyond Plan (Feb 6)\n5. Exit Interview (Feb 13 or Feb 20)\n6. Chemistry Quiz (Nov 19)\n7. Apply for Google Internship (Not yet available)\n8. Scholarships ($30,000 remaining)\n9. Psychology Personality Exam (Nov 19)\n10. Psychology Sex and Gender Exam (November 19)\n11. Chemistry lab report (November 21)");
 	}
 }
 
