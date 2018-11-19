@@ -21,7 +21,7 @@ email.on("mail", function(mail, seqno, attributes){
 		.setDescription(mail.text)
 		.setTimestamp()
 		.setFooter("Powered by node.js", bot.user.avatarURL);
-	//bot.channels.get("414991971753656330").send({embed});
+	bot.channels.get("415042797553451008").send({embed});
 	bot.fetchUser("385905131063083008").then(function(user) {user.send({embed})});
 });
 
