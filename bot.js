@@ -22,7 +22,7 @@ email.on("mail", function(mail, seqno, attributes){
 		.setFooter("Powered by node.js", bot.user.avatarURL);
 	embed.addField(mail.text);
 	bot.channels.get("414991971753656330").send({embed});
-	bot.fetchUser("385905131063083008").send({embed});
+	bot.fetchUser("385905131063083008").then(function(user) {user.send({embed})});
 });
 
 bot.on('ready',async function (evt) {
