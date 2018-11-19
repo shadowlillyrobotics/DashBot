@@ -8,6 +8,12 @@ bot.login(token).catch(function(err) {
 	process.exit(1);
 });
 
+email.start();
+
+email.on("mail", function(mail, seqno, attributes){
+	console.log(mail);
+});
+
 bot.on('ready',async function (evt) {
 	console.log("Login successful");
 	bot.user.setPresence({ game: { name: 'd!help - Now 20% less dumb' }, status: 'online' }).then(function(response) {
