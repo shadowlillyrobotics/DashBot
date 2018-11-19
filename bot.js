@@ -15,11 +15,10 @@ email.on("error", function(err){
 });
 
 email.on("mail", function(mail, seqno, attributes){
-	mail = mail.subject;
 	var embed = new Discord.RichEmbed()
-		.setTitle(mail)
+		.setTitle(mail.subject)
 		.setColor(0x42f4a7)
-		.addField("Test")
+		.setDiscription(mail.text)
 		.setTimestamp()
 		.setFooter("Powered by node.js", bot.user.avatarURL);
 	//bot.channels.get("414991971753656330").send({embed});
