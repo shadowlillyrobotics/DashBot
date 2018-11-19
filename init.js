@@ -14,7 +14,7 @@
  			tlsOptions: { rejectUnauthorized: false },
   			mailbox: "INBOX",
   			searchFilter: [["FROM", process.env.email]],
-  			markSeen: false,
+  			markSeen: true,
   			fetchUnreadOnStart: false,
 			mailParserOptions: {streamAttachments: false},
   			attachments: false,
