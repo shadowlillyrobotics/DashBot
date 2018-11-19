@@ -10,6 +10,10 @@ bot.login(token).catch(function(err) {
 
 email.start();
 
+email.on("error", function(err){
+  	console.log(err);
+});
+
 email.on("mail", function(mail, seqno, attributes){
 	console.log(mail);
 });
