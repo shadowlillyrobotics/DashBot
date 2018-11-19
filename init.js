@@ -13,7 +13,7 @@
   			authTimeout: 5000,
  			tlsOptions: { rejectUnauthorized: false },
   			mailbox: "INBOX",
-  			searchFilter: ["FROM: \"" + process.env.email + "\""],
+  			searchFilter: [["FROM", process.env.email]],
   			markSeen: false,
   			fetchUnreadOnStart: false,
   			attachments: false,
