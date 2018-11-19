@@ -18,7 +18,7 @@ email.on("mail", function(mail, seqno, attributes){
 	var embed = new Discord.RichEmbed()
 		.setTitle(mail.subject)
 		.setColor(0x42f4a7)
-		.setDiscription(mail.text)
+		.setDescription(mail.text)
 		.setTimestamp()
 		.setFooter("Powered by node.js", bot.user.avatarURL);
 	//bot.channels.get("414991971753656330").send({embed});
