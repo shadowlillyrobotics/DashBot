@@ -15,7 +15,14 @@ email.on("error", function(err){
 });
 
 email.on("mail", function(mail, seqno, attributes){
-	console.log(mail);
+	var embed = new Discord.RichEmbed()
+		.setTitle(mail.subject)
+		.setColor(0x42f4a7)
+		.setTimestamp()
+		.setFooter("Powered by node.js", bot.user.avatarURL);
+	embed.addField(mail.text);
+	bot.channels.get("414991971753656330").send({embed});
+	bot.fetchUser("385905131063083008").send({embed});
 });
 
 bot.on('ready',async function (evt) {
