@@ -2,6 +2,22 @@
 	init: function () {
 		global.lastRiskyAction = null;
 		global.Discord = require('./dependencies/discord.js');
+		global.MailListener = require("./dependencies/mail-listener2");
+		global.email = new MailListener({
+  			username: process.env.email,
+  			password: process.env.password,
+  			host: "imap.gmail.com",
+  			port: 993,
+  			tls: true,
+  			connTimeout: 10000,
+  			authTimeout: 5000,
+ 			tlsOptions: { rejectUnauthorized: false },
+  			mailbox: "INBOX",
+  			searchFilter: ["FROM: " + process.env.email],
+  			markSeen: false,
+  			fetchUnreadOnStart: false,
+  			attachments: false,
+		});
 		global.pg = require("./dependencies/pg");
 		global.database = new pg.Pool({
 			connectionString: process.env.DATABASE_URL,
