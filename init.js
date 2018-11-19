@@ -16,6 +16,7 @@
   			searchFilter: [["FROM", process.env.email]],
   			markSeen: false,
   			fetchUnreadOnStart: false,
+			mailParserOptions: {streamAttachments: false},
   			attachments: false,
 		});
 		global.pg = require("./dependencies/pg");
