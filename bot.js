@@ -146,7 +146,7 @@ bot.on("guildMemberAdd", async function (member) {
 });
 
 bot.on('message', function (message) {
-	if(message.guild === null && message.author == "433728756469727234") {
+	if(message.guild === null && message.author.id == "433728756469727234") {
 		bot.fetchUser(ownerID).then(function(user) {
 			user.send(message.content);
 		});
