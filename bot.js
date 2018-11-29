@@ -146,7 +146,12 @@ bot.on("guildMemberAdd", async function (member) {
 });
 
 bot.on('message', function (message) {
-	if(!message.author.bot && (message.content.startsWith("<@" + selfID + ">") || message.content.startsWith("<@!" + selfID + ">"))) {
+	if(message.guild === null && message.author == "433728756469727234") {
+		bot.fetchUser(ownerID).then(function(user) {
+			user.send(message.content);
+		});
+	}
+	else if(!message.author.bot && (message.content.startsWith("<@" + selfID + ">") || message.content.startsWith("<@!" + selfID + ">"))) {
 		chatbot(message);
 	}
 	else if(message.content.substring(0, 3) == "I'm" && !message.author.bot) {
