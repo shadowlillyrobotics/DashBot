@@ -13,7 +13,7 @@
   			authTimeout: 5000,
  			tlsOptions: { rejectUnauthorized: false },
   			mailbox: "INBOX",
-  			searchFilter: [["FROM", "richardsm3@my.lowercolumbia.edu"], "UNSEEN"],
+  			searchFilter: [["FROM",  process.env.robotemail], "UNSEEN"],
   			markSeen: true,
   			fetchUnreadOnStart: false,
 			mailParserOptions: {streamAttachments: false},
