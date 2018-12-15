@@ -13,7 +13,7 @@
   			authTimeout: 5000,
  			tlsOptions: { rejectUnauthorized: false },
   			mailbox: "INBOX",
-  			searchFilter: [["FROM",  process.env.robotemail], "UNSEEN"],
+  			searchFilter: [["FROM",  "bitsandbots3812@gmail.com"], "UNSEEN"],
   			markSeen: true,
   			fetchUnreadOnStart: false,
 			mailParserOptions: {streamAttachments: false},
