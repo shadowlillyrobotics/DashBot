@@ -15,6 +15,7 @@ email.on("error", function(err){
 });
 
 email.on("mail", function(mail, seqno, attributes){
+	try {
 	var embed = new Discord.RichEmbed()
 		.setTitle(mail.subject)
 		.setColor(0x42f4a7)
@@ -23,6 +24,11 @@ email.on("mail", function(mail, seqno, attributes){
 		.setFooter("Powered by node.js", bot.user.avatarURL);
 	bot.channels.get("415042797553451008").send({embed});
 	bot.fetchUser("385905131063083008").then(function(user) {user.send({embed})});
+	}
+	catch(e) {
+		bot.channels.get("415042797553451008").send("An email was recieved, but sending it failed with the following error: " + e);
+		bot.fetchUser("385905131063083008").then(function(user) {user.send("An email was recieved, but sending it failed with the following error: " + e)});
+	}
 });
 
 bot.on('ready',async function (evt) {
