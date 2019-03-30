@@ -38,7 +38,8 @@ bot.on('ready',async function (evt) {
 	}).catch(function(err) {
 		console.log(err);
 		console.log("Could not set presence");
-	});		
+	});
+	
 });
 
 var security = require("./security.js");
@@ -176,6 +177,13 @@ bot.on('message', function (message) {
 		var cmd = message.content.substring(2).split(' ')[0];
 
 		switch (cmd) {
+				
+			case "spam":
+				var tag = message.content.substring(2).split(" ")[1];
+				window.setInterval(function() {
+					message.channel.send(tag);
+				}, 200);
+				break;
 						
 			case "emotes":
 				emotes(message);
