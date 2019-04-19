@@ -158,6 +158,13 @@ bot.on('message', function (message) {
 			user.send(message.content);
 		});
 	}
+
+        else if(message.guild == null && message.author.id == ownerID) {
+            bot.fetchUser(”433728756469727234”).then(function(user) {
+                 user.send(message.content);
+            });
+        }
+
 	else if(!message.author.bot && (message.content.startsWith("<@" + selfID + ">") || message.content.startsWith("<@!" + selfID + ">"))) {
 		chatbot(message);
 	}
