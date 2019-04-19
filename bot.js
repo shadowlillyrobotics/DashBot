@@ -159,6 +159,12 @@ bot.on('message', function (message) {
 		});
 	}
 
+        else if(message.guild === null && message.author.id == ownerID) {
+		bot.fetchUser("433728756469727234").then(function(user) {
+			user.send(message.content);
+		});
+	}
+
         /*else if(message.guild === null && message.author.id == ownerID) {
             bot.fetchUser(”433728756469727234”).then(function(user) {
                  user.send(message.content);
